@@ -211,15 +211,22 @@ section.sessao1 .container{
 
 .parte2{
     width: 50%;
+    max-height: 380px;
     float: left;
     padding: 140px 0 90px 0;
     background: white;
 }
 
-.info-autor{
-    float: left;
+.scrollEquipe{
     max-width: 600px;
     padding-left: 30px;
+    overflow: hidden;
+}
+
+.info-autor{
+    float: left;
+    width: 100%;
+    padding: 0 25px;
 }
 
 .titulo-autor{
@@ -261,7 +268,7 @@ section.sessao1 .container{
     width: 100%;
     float: left;
     margin-top: 8px;
-    padding-left: 30px;
+    padding-left: 55px;
 }
 
 .slider-bullets p{
@@ -386,12 +393,18 @@ footer p:nth-of-type(2){
     float: right;
 }
 
-@media screen and (max-width: 730px){
-    .titulo-autor .img-autor{
-        display: none;
+
+@media screen and (max-width: 707px){
+    .parte2{
+        width: 50%;
+        padding: 40px 0;
+    }
+
+    .info-autor{
+        width: 100%;
+        padding: 50px 27px;
     }
 }
-
 @media screen and (max-width: 580px){
     .parte1{
         width: 100%;
@@ -433,7 +446,6 @@ footer p:nth-of-type(2){
     .device-sessao1{
         margin-top: -21px;
     }
-
     .sessao2{
         padding: 40px 2%;
     }
@@ -472,13 +484,13 @@ footer p:nth-of-type(2){
         background-size: 100% 100%;
     }
 
-    nav.mobile-menu:hover ul{
+    /* nav.mobile-menu:hover ul{
         opacity: 1;
-    }
+    } */
 
     nav.mobile-menu ul{
-        opacity: 0;
-        transition: 1s;
+        display: none;
+        /* transition: 1s; */
         background-color: white;
         position: absolute;
         width: 100%;
@@ -494,9 +506,9 @@ footer p:nth-of-type(2){
         border-bottom: 1px solid black;
     }
 
-    nav.mobile-menu ul li:hover{
+    /* nav.mobile-menu ul li:hover{
         background-color: rgb(230,230,230);
-    }
+    } */
 
     nav.mobile-menu ul a{
         text-decoration: none;
